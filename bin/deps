@@ -10,3 +10,8 @@
 /bundles/Sensio/Bundle  FrameworkExtraBundle  http://github.com/sensio/SensioFrameworkExtraBundle.git
 /bundles/JMS            SecurityExtraBundle   http://github.com/schmittjoh/SecurityExtraBundle.git
 /bundles/Symfony/Bundle WebConfiguratorBundle http://github.com/symfony/WebConfiguratorBundle.git
+/                       behat/Mink            http://github.com/Behat/Mink.git
+/                       behat/Gherkin         http://github.com/Behat/Gherkin.git
+/                       behat/Behat           http://github.com/Behat/Behat.git
+/bundles/Behat          MinkBundle            http://github.com/Behat/MinkBundle.git
+/bundles/Behat          BehatBundle           http://github.com/Behat/BehatBundle.git

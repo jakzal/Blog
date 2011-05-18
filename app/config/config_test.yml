@@ -9,3 +9,8 @@ framework:
 web_profiler:
     toolbar: false
     intercept_redirects: false
+
+behat_mink:
+    start_url:  http://kuba.dev/app_test.php/
+
+behat: ~
