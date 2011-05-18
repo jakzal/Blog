@@ -1,0 +1,3 @@
+[submodule "src/PSS/Bundle/BlogBundle"]
+	path = src/PSS/Bundle/BlogBundle
+	url = git@github.com:PolishSymfonySociety/PSSBlogBundle.git
