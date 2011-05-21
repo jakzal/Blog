@@ -3,11 +3,45 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+        {% block stylesheets %}
+            <link href="{{ asset('css/blog.css') }}" rel="stylesheet" type="text/css" />
+        {% endblock %}
         <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+    {% block body %}
+        <div id="wrapper">
+            <div id="content">{% block content %}{% endblock %}</div>
+            <div id="sidebar">
+                <div style="text-align: center; margin-top: 5px;"><a href="http://www.symfonylab.pl/"><img src="/images/symfonylab-ad.png" alt="Polska Społeczność Symfony" /></a></div>
+            </div>
+            <div id="header">
+                <div id="quote">
+                    <h2>If you don't know where you want to go, you will never get there</h2>
+                </div>
+                <div id="menu">
+                    <ul id="main-menu">
+                        <li>Item</li>
+                    </ul>
+                </div>
+                <div id="header-siteheader">
+                    <a href="#" title=""><img src="{{ asset('images/kuba.png') }}" alt="" /></a>
+                    <h1><a href="#">code | less</a></h1>
+                </div>
+                <div id="header-sidebar">
+                    <?php include_component('zWordPress', 'searchForm') ?>
+                    <form id="search_form" method="post" action="#">
+                        <input type="text" name="query" />
+                        <input type="submit" />
+                    </form>
+                </div>
+            </div>
+            <div id="footer">
+                <div id="licence">licence</div>
+                <div id="credits">Runs on Symfony.</div>
+            </div>
+        </div>
+    {% endblock %}
+    {% block javascripts %}{% endblock %}
     </body>
 </html>
