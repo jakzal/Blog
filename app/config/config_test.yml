@@ -10,7 +10,13 @@ web_profiler:
     toolbar: false
     intercept_redirects: false
 
+doctrine:
+    dbal:
+        # driver:   pdo_sqlite
+        # dbname:   %kernel.root_dir%/blog-test.db
+        dbname:   blog_test
+
 behat_mink:
-    start_url:  http://kuba.dev/app_test.php/
+    start_url: http://kuba.dev/app_test.php/
 
 behat: ~

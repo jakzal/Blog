@@ -17,6 +17,7 @@ $loader->registerNamespaces(array(
     'Behat\BehatBundle' => __DIR__.'/../vendor/bundles',
     'Behat\Behat'       => __DIR__.'/../vendor/behat/Behat/src',
     'Behat\Gherkin'     => __DIR__.'/../vendor/behat/Gherkin/src',
+    'PSS'              => __DIR__.'/../src',
     'Acme'             => __DIR__.'/../src',
 ));
 $loader->registerPrefixes(array(

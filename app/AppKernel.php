@@ -20,21 +20,19 @@ class AppKernel extends Kernel
             new Symfony\Bundle\AsseticBundle\AsseticBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             new JMS\SecurityExtraBundle\JMSSecurityExtraBundle(),
+            new PSS\Bundle\BlogBundle\PSSBlogBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
             $bundles[] = new Acme\DemoBundle\AcmeDemoBundle();
             $bundles[] = new Symfony\Bundle\WebProfilerBundle\WebProfilerBundle();
             $bundles[] = new Symfony\Bundle\WebConfiguratorBundle\SymfonyWebConfiguratorBundle();
+            $bundles[] = new Behat\MinkBundle\BehatMinkBundle();
+            $bundles[] = new Behat\BehatBundle\BehatBundle();
 
-            if ($this->getEnvironment() == 'test') {
-                $bundles[] = new Behat\MinkBundle\BehatMinkBundle();
-                $bundles[] = new Behat\BehatBundle\BehatBundle();
-
-                // include PHPUnit assertions
-                require_once 'PHPUnit/Autoload.php';
-                require_once 'PHPUnit/Framework/Assert/Functions.php';
-            }
+            // include PHPUnit assertions
+            require_once 'PHPUnit/Autoload.php';
+            require_once 'PHPUnit/Framework/Assert/Functions.php';
         }
 
         return $bundles;
