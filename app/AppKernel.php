@@ -27,12 +27,15 @@ class AppKernel extends Kernel
             $bundles[] = new Acme\DemoBundle\AcmeDemoBundle();
             $bundles[] = new Symfony\Bundle\WebProfilerBundle\WebProfilerBundle();
             $bundles[] = new Symfony\Bundle\WebConfiguratorBundle\SymfonyWebConfiguratorBundle();
-            $bundles[] = new Behat\MinkBundle\BehatMinkBundle();
-            $bundles[] = new Behat\BehatBundle\BehatBundle();
 
-            // include PHPUnit assertions
-            require_once 'PHPUnit/Autoload.php';
-            require_once 'PHPUnit/Framework/Assert/Functions.php';
+            if ($this->getEnvironment() == 'test') {
+                $bundles[] = new Behat\MinkBundle\BehatMinkBundle();
+                $bundles[] = new Behat\BehatBundle\BehatBundle();
+
+                // include PHPUnit assertions
+                require_once 'PHPUnit/Autoload.php';
+                require_once 'PHPUnit/Framework/Assert/Functions.php';
+            }
         }
 
         return $bundles;
