@@ -16,7 +16,7 @@ $version = trim(file_get_contents($rootDir.'/VERSION'));
 
 // Initialization
 if (in_array('--reinstall', $argv)) {
-    system('rm -rf $vendorDir');
+    system('rm -rf '.$vendorDir);
 }
 
 $cloneOptions = '';
@@ -69,3 +69,6 @@ system($rootDir.'/bin/build_bootstrap.php');
 
 // Update assets
 system($rootDir.'/app/console assets:install '.$rootDir.'/web/');
+
+// Remove the cache
+system($rootDir.'/app/console cache:clear --no-warmup');

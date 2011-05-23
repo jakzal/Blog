@@ -12,6 +12,7 @@ $loader->registerNamespaces(array(
     'Doctrine'         => __DIR__.'/../vendor/doctrine/lib',
     'Monolog'          => __DIR__.'/../vendor/monolog/src',
     'Assetic'          => __DIR__.'/../vendor/assetic/src',
+    'Metadata'         => __DIR__.'/../vendor/metadata/src',
     'Behat\Mink'       => __DIR__.'/../vendor/behat/Mink/src',
     'Behat\MinkBundle' => __DIR__.'/../vendor/bundles',
     'Behat\BehatBundle' => __DIR__.'/../vendor/bundles',
