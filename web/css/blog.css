@@ -666,6 +666,18 @@ ul.tag-cloud li.size5 {
   font-size: 2.1em;
 }
 
+ul.tag-cloud li.size6 {
+  font-size: 2.3em;
+}
+
+ul.tag-cloud li.size7 {
+  font-size: 2.5em;
+}
+
+ul.tag-cloud li.size8 {
+  font-size: 2.7em;
+}
+
 h1.message {
   font-weight: bold !important;
   font-size: 1.2em !important;
