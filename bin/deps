@@ -16,3 +16,5 @@
 /                       behat/Behat           http://github.com/Behat/Behat.git
 /bundles/Behat          MinkBundle            http://github.com/Behat/MinkBundle.git
 /bundles/Behat          BehatBundle           http://github.com/Behat/BehatBundle.git
+/                       Zend                  git://github.com/zendframework/zf2.git
+/bundles/Knplabs/Bundle PaginatorBundle       git://github.com/knplabs/PaginatorBundle.git
