@@ -20,6 +20,6 @@ doctrine:
         dbname:   blog_test
 
 behat_mink:
-    start_url: http://kuba.dev/app_test.php/
+    base_url: http://kuba.dev/app_test.php/
 
 behat: ~
