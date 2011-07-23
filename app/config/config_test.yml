@@ -19,7 +19,7 @@ doctrine:
         # dbname:   %kernel.root_dir%/blog-test.db
         dbname:   blog_test
 
-behat_mink:
+mink:
     base_url: http://kuba.dev/app_test.php/
 
 behat: ~
