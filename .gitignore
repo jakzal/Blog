@@ -1,6 +1,8 @@
-web/bundles/
 app/bootstrap*
 app/cache/*
 app/logs/*
+bin/behat
 build/
+composer.phar
 vendor/
+web/bundles/
