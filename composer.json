@@ -19,27 +19,21 @@
         "sensio/distribution-bundle":     "2.0.*",
         "jms/security-extra-bundle":      "1.0.*",
 
-        "knplabs/knp-paginator-bundle": "*"
+        "polishsymfonycommunity/blog-bundle": "*"
     },
-
-    "suggest": {
-        "behat/behat": ">=2.2.2",
-        "behat/mink": ">=1.3.2",
-        "behat/mink-bundle": "*",
-        "behat/behat-bundle": "*",
+    "require-dev": {
+        "behat/behat":           "2.3.*",
+        "behat/mink":            "1.3.*",
+        "behat/behat-bundle":    "*",
+        "behat/mink-bundle":     "*",
         "behat/common-contexts": "*"
     },
-
     "repositories": {
         "behat/mink-deps": { "type": "composer", "url": "behat.org" }
     },
-
     "autoload": {
-        "psr-0": {
-            "PSS": "src/"
-        }
+        "psr-0": { "Zalas": "src/" }
     },
-
     "config": {
         "bin-dir": "bin/"
     }

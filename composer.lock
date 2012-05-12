@@ -1,35 +1,6 @@
 {
-    "hash": "029f600416e3197a68439a992afecf07",
+    "hash": "39b3745256010faf9c89c6871957470a",
     "packages": [
-        {
-            "package": "behat/behat",
-            "version": "dev-master",
-            "source-reference": "v2.3.5"
-        },
-        {
-            "package": "behat/behat-bundle",
-            "version": "dev-master",
-            "source-reference": "55ede38ec9694d67c7bc51e910f7009978421a56"
-        },
-        {
-            "package": "behat/common-contexts",
-            "version": "dev-master",
-            "source-reference": "5a4197c575e18d418682f3e39eec842505d11443"
-        },
-        {
-            "package": "behat/gherkin",
-            "version": "v2.1.1"
-        },
-        {
-            "package": "behat/mink",
-            "version": "dev-master",
-            "source-reference": "v1.3.3"
-        },
-        {
-            "package": "behat/mink-bundle",
-            "version": "dev-master",
-            "source-reference": "4f68c897b5a0b0414d3fad9b282a2a8885136cad"
-        },
         {
             "package": "doctrine/common",
             "version": "2.1.x-dev",
@@ -43,7 +14,7 @@
         {
             "package": "doctrine/orm",
             "version": "2.1.x-dev",
-            "source-reference": "57acceaff2d2ca5c047a9fed1d5bbc950df81d16"
+            "source-reference": "07ee8c524984c425dade9baf39911a68c3a9b22a"
         },
         {
             "package": "jms/metadata",
@@ -52,12 +23,12 @@
         {
             "package": "jms/security-extra-bundle",
             "version": "1.0.x-dev",
-            "source-reference": "541a4c242328dc04b99540c75346cc74a7c0cfb5"
+            "source-reference": "e752f888c51425f71382c056961f10f2be642102"
         },
         {
             "package": "knplabs/knp-components",
             "version": "dev-master",
-            "source-reference": "v1.1"
+            "source-reference": "9fa22749e8bb337071d5bf7759f7feecc9baf597"
         },
         {
             "package": "knplabs/knp-paginator-bundle",
@@ -67,51 +38,102 @@
         {
             "package": "kriswallsmith/assetic",
             "version": "1.0.x-dev",
-            "source-reference": "dc073c2a96ac0212814da501b00e74d74717935a"
+            "source-reference": "0e2f7d4e1658a3ec818fab289af5b99ac3e98e9c"
         },
         {
             "package": "monolog/monolog",
-            "version": "1.0.2"
+            "version": "1.1.0"
+        },
+        {
+            "package": "polishsymfonycommunity/blog-bundle",
+            "version": "dev-master",
+            "source-reference": "2cf7341217bd54b9914089a50c08e64fb6fe5179"
         },
         {
             "package": "sensio/distribution-bundle",
-            "version": "2.0-dev",
+            "version": "2.0.x-dev",
             "source-reference": "20b66a408084ad8752f98e50f10533f5245310bf"
         },
         {
             "package": "sensio/framework-extra-bundle",
-            "version": "2.0-dev",
-            "source-reference": "638f545b7020b9e9d5944a7e3167f60ed848250d"
+            "version": "2.0.x-dev",
+            "source-reference": "1eda94d838aa885e154f92f426df35f2252cdb92"
         },
         {
             "package": "sensio/generator-bundle",
-            "version": "2.0-dev",
-            "source-reference": "b1ccb78c1743f30817b0fce9bb5c6baff6ed7bf8"
+            "version": "2.0.x-dev",
+            "source-reference": "83b768a487a6878f2bc2ad6859bd61a3651a7885"
         },
         {
             "package": "swiftmailer/swiftmailer",
-            "version": "4.1.6"
+            "version": "dev-master",
+            "source-reference": "57789082d1d53529dcf8cd3ca132d9787a59afee"
+        },
+        {
+            "package": "swiftmailer/swiftmailer",
+            "version": "dev-master",
+            "source-reference": "57789082d1d53529dcf8cd3ca132d9787a59afee",
+            "alias-pretty-version": "4.1.x-dev",
+            "alias-version": "4.1.9999999.9999999-dev"
         },
         {
             "package": "symfony/assetic-bundle",
-            "version": "2.0-dev",
+            "version": "2.0.x-dev",
             "source-reference": "3515e6f0ab1e628bd9208a0d4316d011511a99cb"
         },
         {
             "package": "symfony/symfony",
-            "version": "v2.0.12"
+            "version": "2.0.x-dev",
+            "source-reference": "cbc3ed36b90681d8daf0c1e046aeed9f0be373a5"
         },
         {
             "package": "twig/extensions",
             "version": "dev-master",
-            "source-reference": "4c831657215e51568fcb31bb9142e827f9a69bd5"
+            "source-reference": "446d870272cd87a720e95242eade38a2acf56eaa"
         },
         {
             "package": "twig/twig",
             "version": "dev-master",
-            "source-reference": "46ae99fa4c11f76248b12da647fe64399f860e82",
-            "alias": "1.7.9999999.9999999-dev"
+            "source-reference": "d661c2a2f654ba8f2bddeeac0b8a80dcd59649ab"
+        },
+        {
+            "package": "twig/twig",
+            "version": "dev-master",
+            "source-reference": "d661c2a2f654ba8f2bddeeac0b8a80dcd59649ab",
+            "alias-pretty-version": "1.9.x-dev",
+            "alias-version": "1.9.9999999.9999999-dev"
         }
     ],
-    "aliases": []
+    "packages-dev": [
+        {
+            "package": "behat/behat",
+            "version": "v2.3.5"
+        },
+        {
+            "package": "behat/behat-bundle",
+            "version": "dev-master",
+            "source-reference": "29f36c9df020b0ba81bf153583cf4533ac07dbcd"
+        },
+        {
+            "package": "behat/common-contexts",
+            "version": "dev-master",
+            "source-reference": "ac7499e648cc2f786a912e1adb4d5d40bdb40e38"
+        },
+        {
+            "package": "behat/gherkin",
+            "version": "v2.1.1"
+        },
+        {
+            "package": "behat/mink",
+            "version": "v1.3.3"
+        },
+        {
+            "package": "behat/mink-bundle",
+            "version": "dev-master",
+            "source-reference": "4f68c897b5a0b0414d3fad9b282a2a8885136cad"
+        }
+    ],
+    "aliases": [
+
+    ]
 }
