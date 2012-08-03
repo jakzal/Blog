@@ -1,4 +1,3 @@
-app/bootstrap*
 app/cache/*
 app/logs/*
 bin/behat

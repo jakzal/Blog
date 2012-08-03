@@ -1,7 +1,7 @@
 imports:
     - { resource: parameters.ini }
     - { resource: security.yml }
-    - { resource: "@PSSBlogBundle/Resources/config/services.yml" }
+    - { resource: "@PSSBlogBundle/Resources/config/services.xml" }
 
 framework:
     #esi:             ~
